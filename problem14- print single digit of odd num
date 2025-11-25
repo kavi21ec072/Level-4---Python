@@ -1,0 +1,12 @@
+def main():
+    x = int(input("Enter Number: "))
+    odd=0
+    while x>0:
+        l=x%10
+        if(l%2 !=0):
+           odd+=1
+        x=x//10
+    y=odd
+    print(f"Result = {y}")
+if __name__ == "__main__":
+    main()
