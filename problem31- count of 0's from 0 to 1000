@@ -1,0 +1,10 @@
+def main():
+    count =0
+    for i in range(0,1001):
+        count += str(i).count('0')
+    print(count) 
+     
+
+
+if __name__ == "__main__":
+    main()
