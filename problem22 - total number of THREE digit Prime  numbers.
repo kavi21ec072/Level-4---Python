@@ -1,0 +1,19 @@
+def main():
+    count=0
+    
+    for i in range(100,1000):  
+        prime = 1
+        for j in range(2,i):
+            if(i%j==0):
+               prime=0
+               break
+        if(prime==1 ):
+            count+=1
+    y=count
+    
+    print(f"Result = {y}")
+           
+
+
+if __name__ == "__main__":
+    main()
