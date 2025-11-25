@@ -1,0 +1,10 @@
+def main():
+    x = int(input("Enter Number: "))
+   
+    ones= x%10
+    tens = (x//10)%10
+    hun=x//100
+    y=hun
+    print(f"Result = {y}")
+if __name__ == "__main__":
+    main()
