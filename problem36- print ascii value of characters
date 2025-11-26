@@ -1,0 +1,10 @@
+def main():
+    ch = input("Enter a character: ")
+    
+    # get ASCII value
+    y = ord(ch)
+
+    print(f"Result = {y}")
+
+if __name__ == "__main__":
+    main()
