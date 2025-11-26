@@ -1,0 +1,17 @@
+def main():
+    x = int(input("Enter first number: "))
+    z = int(input("Enter second number: "))
+
+    # Find LCM
+    larger = max(x, z)
+    
+    while True:
+        if (larger % x == 0) and (larger % z == 0):
+            y = larger    # LCM found
+            break
+        larger += 1
+
+    print(f"Result = {y}")
+
+if __name__ == "__main__":
+    main()
