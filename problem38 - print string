@@ -1,0 +1,8 @@
+def main():
+   # Your Code Here
+    str = input("enter a character: ")
+    y=str
+    print(f"Result = {y}")
+if __name__ == "__main__":
+    main()
+        
