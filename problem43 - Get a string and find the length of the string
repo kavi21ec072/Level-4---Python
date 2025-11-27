@@ -1,0 +1,13 @@
+def main():
+   
+    num = input("enter a string: ")
+    
+    if num.isdigit() :
+        print("valid number")
+    else:
+        print("not a valid number")
+    
+if __name__ == "__main__":
+    main()
+        
+    
