@@ -1,0 +1,9 @@
+def main():
+   
+    str = input("enter a number: ")
+    y=int(str)
+    print(f"Result = {y}")
+    
+if __name__ == "__main__":
+    main()
+        
