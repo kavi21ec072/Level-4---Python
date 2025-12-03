@@ -1,0 +1,18 @@
+def main():
+    x = (input("Enter Number: "))
+    arr=[int(d) for d in x]
+    
+    for i in range (len(arr)):
+        if arr[i]>=10:
+            carry = arr[i]//10
+            arr[i]=arr[i]%10
+            if i+1 <len(arr):
+                arr[i+1]+=carry
+            else:
+                arr.append(carry)
+    y=arr
+   # Your Code Here
+    print(f"Result = {y}")
+    
+if __name__ == "__main__":
+    main()
