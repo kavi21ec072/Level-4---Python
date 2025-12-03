@@ -1,0 +1,29 @@
+def add_arrays(a1, a2):
+    while len(a1) < len(a2):
+        a1.insert(0, 0)
+    while len(a2) < len(a1):
+        a2.insert(0, 0)
+
+    result = []
+    carry = 0
+
+    for i in range(len(a1)-1, -1, -1):
+        total = a1[i] + a2[i] + carry
+        result.append(total % 10)     
+        carry = total // 10          
+    if carry:
+        result.append(carry)
+
+    result.reverse()
+
+    return result
+
+n1 = input("Enter first number (up to 50 digits): ")
+n2 = input("Enter second number (up to 50 digits): ")
+
+arr1 = [int(d) for d in n1]
+arr2 = [int(d) for d in n2]
+
+ans = add_arrays(arr1, arr2)
+
+print("Result array =", ans)
