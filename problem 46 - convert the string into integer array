@@ -1,0 +1,9 @@
+def main():
+    x = input("Enter Number: ")
+    arr= [int(digit) for digit in x]
+    y=arr
+    
+   # Your Code Here
+    print(f"Result = {y}")
+if __name__ == "__main__":
+    main()
